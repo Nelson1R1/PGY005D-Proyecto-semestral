@@ -25,11 +25,10 @@
     <header class="header" id="header">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
-                <img src="../img/planta.gif" alt="" style="width: 50px; border-radius: 50%;">
+                <img src="../img/planta.gif" alt="" style="width: 50px; border-radius: 50%;"> <!--border-raduis le da forma circular al icono -->
 
                 <!--AQUI SE ENCUENTRA EL BOTON QUE SE DESPLIEGA HACIA ABAJO EN EL NAVBAR CON SU RESPECTVIOS LINKS-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapsibleNavbar">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -44,8 +43,7 @@
                             <a class="nav-link" href="../registrarse/registrarse.html">Registrarse</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="" data-bs-toggle="modal" data-bs-target="#myModal">Iniciar
-                                sesion</a>
+                            <a class="nav-link" href="#"  data-bs-toggle="modal" data-bs-target="#myModal">Iniciar sesión</a>
                         </li>
                     </ul>
                 </div>
@@ -130,7 +128,7 @@
 
                     <!-- Modal body -->
                     <div class="modal-body text-center">
-                        <img src="img/cerrar-con-llave.png" alt="candado-icon" width="100">
+                        <img src="../img/cerrar-con-llave.png" alt="candado-icon" width="100">
                         <div class="container-fluid"> 
                           <div class="row">
                             <div class="col-sm-2"></div>
@@ -172,56 +170,6 @@
 
 
     </main>
-
-    <!-- The Modal iniciar sesion-->
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title">Iniciar sesión</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <!-- Modal body -->
-                <div class="modal-body text-center">
-                    <img src="../img/cerrar-con-llave.png" alt="candado-icon" width="100">
-                    <div class="container-fluid"> 
-                      <div class="row">
-                        <div class="col-sm-2"></div>
-                        <div class="col-sm-8">
-                          <form action="tienda/Tiendaprincipal.html" method="GET">
-                            <div class="form-group">
-                              <label for="txtUser">Usuario:</label>
-                              <input placeholder="Ej: m.salinas" class="form-control" type="text" name="txtUser" id="txtUser">
-            
-                            </div>
-                            <div class="form-group">
-                              <label for="txtPass">Contraseña:</label>
-                              <input placeholder="Ej:**********" class="form-control" type="password" name="txtPass" id="txtPass">
-                            </div>
-
-                            <div class=" m-3 d-flex justify-content-between">
-                                <button type="submit" class="btn btn-success "  name="btnAceptar" id="btnEnviar" > Aceptar</button>
-                                <button type="reset" class="btn btn-danger"  name="btnBorrar" id="btnLimpiar">Borrar</button>
-                            </div>
-                            
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- The Modal iniciar sesion-->
 
 </div>
 
